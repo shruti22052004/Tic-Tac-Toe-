@@ -1,0 +1,124 @@
+.home {
+    display: grid;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    min-height: 99vh;
+    align-items: center;
+    justify-content: center;
+    background: 
+    radial-gradient(circle, rgba(117, 192, 230, 0.4) 10%, transparent 80%),
+    linear-gradient(135deg, #015a80, #012e68, #010f1b);
+
+
+
+}
+.home #particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.home .content {
+    flex: 1 1 40rem;
+    padding-top: 1rem;
+    z-index: 1;
+}
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family:'Poppins','sans-serif';
+    }
+    .wrapper {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+        background-size: cover;
+        background-position: center;
+        background-color: transparent;  /* This ensures the background won't be underneath the Tic-Tac-Toe box */
+    }
+
+
+
+
+
+
+.game-info{
+    color:black;
+    position:absolute;
+    top:2rem;
+    left:50%;
+    transform:translateX(-50%);
+    background-color: rgb(79, 167, 215); 
+    
+    border-radius:1rem;
+    border:1px solid rgba(255,255,255,0.25);
+    padding:0.5rem 3rem;
+    text-align: center;
+}
+
+.tic-tac-toe {
+    padding-top: 20px;
+    width: 90%;
+    max-width: 20rem;
+    background-color: rgb(79, 167, 215); /* Background color for the Tic-Tac-Toe grid */
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    aspect-ratio: 1/1;
+    z-index: 1;  /* Ensures the Tic-Tac-Toe box stays above any background content */
+}
+.box{
+    position:relative;
+    width:100%;
+    aspect-ratio:1/1;
+    cursor:pointer;
+    font-size:3rem;
+    color:black;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+
+}
+.box1,.box2,.box4,.box5{
+    border-right:2px solid black;
+    border-bottom:2px solid black;
+}
+.box3,.box6{
+    border-bottom:2px solid black;
+}
+.box7,.box8{
+    border-right:2px solid black;
+}
+.btn{
+    color:black;
+    position:absolute;
+    bottom:2rem;
+    left:50%;
+    transform:translateX(-50%);
+    background-color: rgb(79, 167, 215); 
+    border-radius:1rem;
+    border:1px solid rgba(255,255,255,0.25);
+    padding:0.5rem 3rem;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+
+
+}
+.btn.active{
+    display: flex;
+}
+.win{
+    background-color: rgba(13, 1, 31, 0.3);
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+            href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+            rel="stylesheet"
+    />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div class="home" id="home">
+        <div  id="particles-js"></div>
+        <div class="dark-mode">
+           
+   <div class="wrapper">
+    <p class="game-info"></p>
+    
+    <div class="tic-tac-toe">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+        <div class="box box6"></div>
+        <div class="box box7"></div>
+        <div class="box box8"></div>
+        <div class="box box9"></div>
+    </div>
+    <button class="btn">New Game</button>
+   </div> 
+  
+   
+  
+   <script src="particles.min.js"></script>
+   <script>
+    particlesJS('particles-js', {
+        particles: {
+            number: {
+                value: 300, /* Increased the number of particles for more density */
+                density: {
+                    enable: true,
+                    value_area: 1200 /* Increased the area for more particles spread */
+                }
+            },
+            shape: {
+                type: 'circle', /* Particles will still be circles */
+                stroke: {
+                    width: 0, /* Optional: Remove stroke */
+                    color: '#ffffff' /* Optional: Set stroke color */
+                }
+            },
+            size: {
+                value: 6, /* Increased the size of particles */
+                random: true, /* Randomize the size */
+                anim: {
+                    enable: true,
+                    speed: 8, /* Animating particles with size change */
+                    sync: false
+                }
+            },
+            opacity: {
+                value: 0.8, /* Set particle opacity */
+                random: true, /* Random opacity for some variance */
+                anim: {
+                    enable: true,
+                    speed: 3,
+                    opacity_min: 0.2, /* Minimum opacity */
+                    sync: false
+                }
+            },
+            move: {
+                enable: true,
+                speed: 6, /* Faster speed for a more energetic effect */
+                direction: 'none', /* Random direction movement */
+                random: true, /* Make particles move in random directions */
+                straight: false,
+                out_mode: 'out', /* Particles disappear when leaving canvas */
+                bounce: true /* Particles will bounce off canvas edges */
+            },
+            links: {
+                enable: true, /* Enable linking lines between particles */
+                distance: 150, /* Distance for connection */
+                color: '#ffffff', /* Set the color of the lines */
+                opacity: 0.5, /* Opacity of the connecting lines */
+                width: 1 /* Width of the lines */
+            },
+            collisions: {
+                enable: true, /* Enable collisions */
+                mode: 'bounce' /* Bouncing effect when particles collide */
+            },
+            interactivity: {
+                events: {
+                    onhover: {
+                        enable: true, /* Enable interactivity on hover */
+                        mode: 'repulse', /* Particles will move away from the cursor */
+                        distance: 100, /* Repulsion distance */
+                        speed: 10 /* Speed of the repulsion */
+                    },
+                    onclick: {
+                        enable: true, /* Enable click interaction */
+                        mode: 'push' /* Push new particles when clicked */
+                    }
+                }
+            }
+        },
+        retina_detect: true, /* Ensure responsiveness on high DPI screens */
+        background: {
+            color: "#1e1e1e", /* Dark background for contrast */
+            image: "", /* Optional: Set an image background if needed */
+            position: "50% 50%",
+            repeat: "no-repeat",
+            size: "cover"
+        }
+    });
+</script>
+
+
+   
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="index.js"></script>
+</div>
+</body>
+</html>
+
+echo "# Tic-Tac-Toe-" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/shruti22052004/Tic-Tac-Toe-.git
+git push -u origin main
